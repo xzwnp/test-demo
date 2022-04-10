@@ -22,6 +22,7 @@ public class Controller {
     }
     @GetMapping("hello/{name}")
     public String sayHello(@PathVariable String name){
+        System.out.println("hot-fix hot-fix");
         return "你好,"+name;
     }
 }
