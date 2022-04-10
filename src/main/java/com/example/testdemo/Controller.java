@@ -22,6 +22,12 @@ public class Controller {
     }
     @GetMapping("hello/{name}")
     public String sayHello(@PathVariable String name){
+        System.out.println("制造一次冲突");
         return "你好,"+name;
+    }
+    @GetMapping("bye/{name}")
+    public String sayGoodBye(@PathVariable String name){
+        System.out.println("制造一次冲突");
+        return "再见,"+name;
     }
 }
