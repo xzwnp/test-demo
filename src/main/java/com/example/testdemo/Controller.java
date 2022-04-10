@@ -16,6 +16,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("api")
 public class Controller {
+    static{
+        System.out.println("我在远程仓库写代码"); 
+    }
     @GetMapping("hello")
     public String sayHello(){
         return "hello world";
